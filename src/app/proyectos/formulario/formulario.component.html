@@ -1,0 +1,21 @@
+<div class="container">
+
+<form id="form-row" #f="ngForm" (ngSubmit)="f.form.valid && onGuardarProyecto()" >
+  <div class="col">
+    <div class="col" >
+      <input type="text" class="form-control" id="titulo" placeholder="Titulo" name="titulo"
+      [(ngModel)]="tituloInput"
+      required>
+    </div>
+
+    <div class="col">
+      <input type="text" class="form-control" id="descripcion" placeholder="Descripcion" name="descripcion"
+      [(ngModel)]="descripcionInput"
+      required>
+    </div>
+
+  </div>
+  <button type="submit" class="btn btn-primary" >+</button>
+  <button type="submit" *ngIf="index !=null" type="submit" class="btn btn-danger" (click)="eliminarProyecto()">Borrar</button>
+</form><br>
+</div>

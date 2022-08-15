@@ -1,0 +1,19 @@
+
+
+<div class="container">
+  <hr />
+  <app-proyecto
+    *ngFor="let proyectoElemento of proyectos; let i = index"
+    [proyecto]="proyectoElemento"
+    [indice]="i"
+  >
+  </app-proyecto>
+
+  <hr/>
+  <app-formulario></app-formulario>
+
+</div>
+
+<div class="container">
+  <button class="btn btn-primary" (click)="agregar()">agregar+</button>
+</div>

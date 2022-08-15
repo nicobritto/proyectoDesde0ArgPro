@@ -1,0 +1,21 @@
+
+<div class="container">
+  <hr>
+  <h1>Proyecto</h1>
+  <div class="row">
+     <div class="col">
+        <div>
+          <ul>
+            <li>
+              <a [routerLink]="['/proyectos',indice]">
+                   {{proyecto.titulo}} {{proyecto.descripcion}}
+              </a>
+            </li>
+          </ul>
+
+          <button type="submit" class="btn btn-primary" (click)="emitirSaludado()">Editar</button>
+        </div>
+     </div>
+  </div>
+
+</div>
